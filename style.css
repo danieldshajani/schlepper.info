@@ -1,0 +1,47 @@
+.offers-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Stellen Sie die Höhe entsprechend ein */
+    overflow: hidden;
+}
+
+.offer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: slideShow 50s infinite;
+    font-size: 35px;
+}
+
+@keyframes slideShow {
+    0%, 9% { opacity: 0; }
+    10%, 19% { opacity: 1; }
+    20%, 29% { opacity: 0; }
+    30%, 39% { opacity: 1; }
+    40%, 49% { opacity: 0; }
+    50%, 59% { opacity: 1; }
+    60%, 69% { opacity: 0; }
+    70%, 79% { opacity: 1; }
+    80%, 89% { opacity: 0; }
+    90%, 99% { opacity: 1; }
+}
+
+/* Individuelle Verzögerungen für jedes Angebot */
+.offer:nth-child(1) { animation-delay: 0s; }
+.offer:nth-child(2) { animation-delay: 2s; }
+.offer:nth-child(3) { animation-delay: 4s; }
+.offer:nth-child(4) { animation-delay: 6s; }
+.offer:nth-child(5) { animation-delay: 8s; }
+.offer:nth-child(6) { animation-delay: 10s; }
+.offer:nth-child(7) { animation-delay: 12s; }
+.offer:nth-child(8) { animation-delay: 14s; }
+.offer:nth-child(9) { animation-delay: 16s; }
+.offer:nth-child(10) { animation-delay: 18s; }
