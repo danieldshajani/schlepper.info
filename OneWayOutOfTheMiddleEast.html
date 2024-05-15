@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>One Way Out of the Middle East</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* Basisstile für alle Geräte */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #5a2a27;
+}
+
+/* Stile für Bildschirme kleiner als 768px (z.B. Smartphones) */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em; /* Kleinere Schriftgrößen für Überschriften */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Stapelt die Navigationselemente vertikal */
+        margin: 10px 0;
+    }
+
+    .content, .offers-slideshow, .moving-offer {
+        padding: 10px;
+        font-size: 1em; /* Kleinere Schrift für den Inhalt */
+    }
+
+    img {
+        width: 100%; /* Bilder nehmen die volle Breite ein */
+        height: auto;
+    }
+
+    .offers-slideshow .offer {
+        display: block; /* Jedes Angebot nimmt die volle Breite ein */
+    }
+
+    .learn-more {
+        padding: 8px 16px; /* Anpassung der Button-Größen */
+    }
+}
+
+/* Spezifische Anpassungen für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center; /* Zentriert Text in Kopf- und Fußzeile */
+    }
+
+    .welcome-eu {
+        width: 50px; /* Verkleinert das EU-Begrüßungsbild */
+        height: 50px;
+    }
+}
+
+    
+    .moving-offer {
+    font-size: 2.5em; /* Größere Schrift für mehr Sichtbarkeit */
+    color: red; /* Rote Schriftfarbe für hohe Aufmerksamkeit */
+    font-weight: bold; /* Fett gedruckter Text */
+    animation: dancing 5s ease-in-out infinite; /* Tanz-Animationsdefinition */
+    padding: 10px;
+    border: 3px dashed red;
+    display: inline-block;
+}
+
+@keyframes dancing {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-10px, -20px);
+    }
+    20% {
+        transform: translate(20px, 15px) rotate(5deg);
+    }
+    30% {
+        transform: translate(-15px, 10px) rotate(-5deg);
+    }
+    40% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(-20px, 20px);
+    }
+    60% {
+        transform: translate(15px, -15px) rotate(5deg);
+    }
+    70% {
+        transform: translate(-10px, 15px) rotate(-5deg);
+    }
+    80% {
+        transform: translate(20px, -10px);
+    }
+    90% {
+        transform: translate(-15px, 10px);
+    }
+}
+
+.learn-more {
+    background-color: #d90047; /* Roter Hintergrund passend zum Thema */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Etwas Abstand zum Angebotstext */
+}
+
+.learn-more:hover {
+    background-color: #bf0039; /* Dunklerer Rotton beim Hover */
+}
+
+    
+    .moving-offer {
+    font-size: 2.5em; /* Größere Schrift für mehr Sichtbarkeit */
+    color: red; /* Rote Schriftfarbe für hohe Aufmerksamkeit */
+    font-weight: bold; /* Fett gedruckter Text */
+    animation: dance 3s linear infinite; /* Animationsdefinition */
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 3px dashed red;
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, 15px);
+    }
+    50% {
+        transform: translate(-10px, -15px);
+    }
+    75% {
+        transform: translate(-5px, 10px);
+    }
+}
+
+.learn-more {
+    background-color: #d90047; /* Roter Hintergrund passend zum Thema */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Etwas Abstand zum Angebotstext */
+}
+
+.learn-more:hover {
+    background-color: #bf0039; /* Dunklerer Rotton beim Hover */
+}
+
+    .jumping-offer {
+    font-size: 2.5em; /* Größere Schrift für mehr Sichtbarkeit */
+    color: red; /* Rote Schriftfarbe für hohe Aufmerksamkeit */
+    font-weight: bold; /* Fett gedruckter Text */
+    animation: jump 1.5s ease-in-out infinite; /* Springende Animation */
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.learn-more {
+    background-color: #d90047; /* Roter Hintergrund passend zum Thema */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Etwas Abstand zum Angebotstext */
+}
+
+.learn-more:hover {
+    background-color: #bf0039; /* Dunklerer Rotton beim Hover */
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-size: 3em;
+            color: #d90047;
+            text-decoration: none;
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .deals {
+            animation: blinker 1s linear infinite;
+            background-color: yellow;
+            color: red;
+            font-size: 2em;
+            padding: 10px;
+            display: inline-block;
+            border: 3px dashed red;
+        }
+        @keyframes blinker {
+            50% { background-color: red; color: yellow; }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        main {
+            padding: 20px;
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>OneWayOutOfTheMiddleEast</h1>
+<nav>
+<ul>
+<li><a href="homex.html">Startseite</a></li>
+<li><a href="about.html">Über uns</a></li>
+<li><a href="services.html">Dienstleistungen</a></li>
+<li><a href="missions.html">Rettungsmissionen</a></li>
+<li><a href="contact.html">Kontakt</a></li>
+<li><a href="preise.html">Preise und Angebote</a></li>
+<li><a href="standorte.html">Standorte und Übernahme der Geretteten</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Willkommen bei One Way Out of the Middle East</h2>
+<p>Wir sind Ihr Partner für sichere und effiziente Rettungsoperationen nach Europa im Mittleren Osten.</p>
+
+<div class="offers-slideshow">
+<div class="offer active"> <a href="aleppoangebote.html">Von Aleppo nach Berlin nur 4500€!</a></div>
+<div class="offer"> <a href="mosulangebote.html">Von Mosul nach Paris nur 5000€!</a></div>
+<div class="offer"> <a href="raqqaangebote.html"> Von Raqqa nach London nur 4800€!</a></div>
+<div class="offer"> <a href="bagdadangebote.html">Von Bagdad nach Rom nur 4600€!</a></div>
+<div class="offer"> <a href="tripoliangebote.html">Von Tripoli nach Madrid nur 4700€!</a></div>
+<div class="offer"> <a href="kabulangebote.html">Von Kabul nach Wien nur 4400€!</a></div>
+<div class="offer"> <a href="damaskusangebote.html"> Von Damaskus nach Amsterdam nur 4200€!</a></div>
+<div class="offer"> <a href="homsangebote.html">Von Homs nach München nur 4300€!</a></div>
+<div class="offer"> <a href="sanaaangebote.html">Von Sana'a nach Zürich nur 4100€!</a></div>
+<div class="offer"> <a href="quettaangebote.html">Von Quetta nach Kopenhagen nur 4500€!</a></div>
+<div class="offer"> <a href="istanbulangebote.html">Von Istanbul nach Stockholm nur 5200€!</a></div>
+<div class="offer"> <a href="teheranangebote.html">Von Teheran nach Oslo nur 5300€!</a></div>
+<div class="offer"> <a href="aleppoangebote.html">Von Aleppo nach Helsinki nur 5400€!</a></div>
+<div class="offer"> <a href="kabulangebote.html">Von Kabul nach Lissabon nur 5500€!</a></div>
+<div class="offer"> <a href="damaskusangebote.html">Von Damaskus nach Prag nur 5600€!</a></div>
+<div class="offer"> <a href="bagdadangebote.html">Von Bagdad nach Dublin nur 5700€!</a></div>
+<div class="offer"> <a href="ammanangebote.html">Von Amman nach Brüssel nur 5800€!</a></div>
+<div class="offer"> <a href="tripoliangebote.html">Von Tripoli nach Warschau nur 5900€!</a></div>
+<div class="offer"> <a href="beirutangebote.html">Von Beirut nach Budapest nur 6000€!</a></div>
+<div class="offer"> <a href="gazaangebote.html">Von Gaza nach Kopenhagen nur 6100€!</a></div>
+<div class="offer"> <a href="erbilangebote.html">Von Erbil nach Mailand nur 6200€!</a></div>
+<div class="offer"> <a href="sanaaangebote.html">Von Sana'a nach Sofia nur 6300€!</a></div>
+<div class="offer"> <a href="basraangebote.html">Von Basra nach Bukarest nur 6400€!</a></div>
+<div class="offer"> <a href="kabulangebote.html">Von Kabul nach Wien nur 4400€!</a></div>
+<div class="offer"> <a href="damaskusangebote.html">Von Damaskus nach Amsterdam nur 4200€!</a></div>
+<div class="offer"> <a href="homsangebote.html">Von Homs nach München nur 4300€!</a></div>
+<div class="offer"> <a href="sanaaangebote.html">Von Sana'a nach Zürich nur 4100€!</a></div>
+<div class="offer"> <a href="jalalabadangebote.html">Von Jalalabad nach Kopenhagen nur 4500€!</a></div>
+<div class="offer"> <a href="mosulangebote.html">Von Mosul nach Rom nur 4700€!</a></div>
+<div class="offer"> <a href="kabulangebote.html">Von Kabul nach Madrid nur 4800€!</a></div>
+<div class="offer"> <a href="aleppoangebote.html">Von Aleppo nach Athen nur 4900€!</a></div>
+<div class="offer"> <a href="beirutangebote.html">Von Beirut nach Paris nur 5000€!</a></div>
+<div class="offer"> <a href="ammanangebote.html">Von Amman nach Barcelona nur 5100€!</a></div>
+<div class="offer"> <a href="tripoliangebote.html">Von Tripoli nach Nizza nur 5900€!</a></div>
+<div class="offer"> <a href="erbilangebote.html">Von Erbil nach Valencia nur 5800€!</a></div>
+<div class="offer"> <a href="basraangebote.html">Von Basra nach Krakau nur 5600€!</a></div>
+<div class="offer"> <a href="sanaaangebote.html">Von Sana'a nach Ljubljana nur 5700€!</a></div>
+<div class="offer"> <a href="quettaangebote.html">Von Quetta nach Vilnius nur 5400€!</a></div>
+<div class="offer"> <a href="kabulangebote.html">Von Kabul nach Riga nur 5300€!</a></div>
+<div class="offer"> <a href="aleppoangebote.html">Von Aleppo nach Tallinn nur 5200€!</a></div>
+    </div>
+
+    
+
+    <div style="white-space: nowrap;"><img src="EUbus.webp" style="width: 50%"> <img src="EUflucht.webp" style="width: 50%"></div>
+    
+</section>
+</main>
+<footer>
+<p>© 2024 OneWayOutOfTheMiddleEast. Alle Rechte vorbehalten.</p>
+<p>Website: <a href="http://www.schlepper.info">schlepper.info</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #004080;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.offer {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.offers-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Erhöhen Sie die Höhe, um die Angebote vollständig sichtbar zu machen */
+    overflow: hidden;
+    margin: 20px 0; /* Abstand zu den Navigationslinks */
+}
+
+.offers-slideshow .offer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Größere Schriftgröße für mehr Auffälligkeit */
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Auffällige Schriftart */
+    opacity: 0;
+    animation: slideShow 12s infinite;
+}
+
+@keyframes slideShow {
+    0%, 7% { opacity: 0; }
+    8%, 24% { opacity: 1; }
+    25%, 31% { opacity: 0; }
+    32%, 48% { opacity: 1; }
+    49%, 55% { opacity: 0; }
+    56%, 72% { opacity: 1; }
+    73%, 79% { opacity: 0; }
+    80%, 96% { opacity: 1; }
+    97%, 100% { opacity: 0; }
+}
+
+.offers-slideshow .offer:nth-child(1) { animation-delay: 0s; }
+.offers-slideshow .offer:nth-child(2) { animation-delay: 2s; }
+.offers-slideshow .offer:nth-child(3) { animation-delay: 4s; }
+.offers-slideshow .offer:nth-child(4) { animation-delay: 6s; }
+.offers-slideshow .offer:nth-child(5) { animation-delay: 8s; }
+.offers-slideshow .offer:nth-child(6) { animation-delay: 10s; }
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+}
