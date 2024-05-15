@@ -5,6 +5,62 @@
 <title>One Way Out of the Middle East</title>
 <link rel="stylesheet" href="style.css">
 <style>
+    /* Basisstile für alle Geräte */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #5a2a27;
+}
+
+/* Stile für Bildschirme kleiner als 768px (z.B. Smartphones) */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em; /* Kleinere Schriftgrößen für Überschriften */
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Stapelt die Navigationselemente vertikal */
+        margin: 10px 0;
+    }
+
+    .content, .offers-slideshow, .moving-offer {
+        padding: 10px;
+        font-size: 1em; /* Kleinere Schrift für den Inhalt */
+    }
+
+    img {
+        width: 100%; /* Bilder nehmen die volle Breite ein */
+        height: auto;
+    }
+
+    .offers-slideshow .offer {
+        display: block; /* Jedes Angebot nimmt die volle Breite ein */
+    }
+
+    .learn-more {
+        padding: 8px 16px; /* Anpassung der Button-Größen */
+    }
+}
+
+/* Spezifische Anpassungen für sehr kleine Bildschirme */
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center; /* Zentriert Text in Kopf- und Fußzeile */
+    }
+
+    .welcome-eu {
+        width: 50px; /* Verkleinert das EU-Begrüßungsbild */
+        height: 50px;
+    }
+}
+
     
     .moving-offer {
     font-size: 2.5em; /* Größere Schrift für mehr Sichtbarkeit */
