@@ -5,51 +5,28 @@
 <title>Dienstleistungen - One Way Out of the Middle East</title>
 <link rel="stylesheet" href="style.css">
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
-    header, footer {
-        background-color: #0056b3;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    h1, h2 {
-        font-size: 3em;
-        color: #d90047;
-        text-decoration: none;
-        margin: 20px 0;
-    }
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    main {
-        padding: 20px;
-    }
-    .offer {
-        background-color: #f4f4f9;
-        border: 2px solid #d90047;
-        padding: 10px;
-        margin: 10px 0;
-        font-size: 1.2em;
-    }
-    img {
-        width: 100%;
-        height: auto;
-    }
+.offers-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Stellen Sie die Höhe entsprechend ein */
+    overflow: hidden;
+}
+
+.offer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    font-size: 35px;
+    animation: none; /* Keine Animation */
+}
 </style>
 </head>
 <body>
@@ -83,13 +60,48 @@
         <div class="offer">
             <h3>Notfallintervention</h3>
             <p>Sofortige Reaktion im Krisenfall, Bereitstellung von Notfallausrüstung und medizinischer Unterstützung.</p>
-            
         </div>
         <div class="offer">
             <h3>Post-Rescue-Support</h3>
             <p>Begleitung und Unterstützung nach der Ankunft zur Integration in die neue Umgebung.</p>
             <img src="service-image.webp" alt="Team in Aktion">
-            
+        </div>
+        <div class="offers-slideshow">
+            <div class="offer active">Von Aleppo nach Berlin nur 4500€!</div>
+            <div class="offer">Von Mosul nach Paris nur 5000€!</div>
+            <div class="offer">Von Raqqa nach London nur 4800€!</div>
+            <div class="offer">Von Bagdad nach Rom nur 4600€!</div>
+            <div class="offer">Von Tripoli nach Madrid nur 4700€!</div>
+            <div class="offer">Von Kabul nach Wien nur 4400€!</div>
+            <div class="offer">Von Damaskus nach Amsterdam nur 4200€!</div>
+            <div class="offer">Von Homs nach München nur 4300€!</div>
+            <div class="offer">Von Sana'a nach Zürich nur 4100€!</div>
+            <div class="offer">Von Quetta nach Kopenhagen nur 4500€!</div>
+            <div class="offer">Von Istanbul nach Stockholm nur 5200€!</div>
+            <div class="offer">Von Teheran nach Oslo nur 5300€!</div>
+            <div class="offer">Von Aleppo nach Helsinki nur 5400€!</div>
+            <div class="offer">Von Kabul nach Lissabon nur 5500€!</div>
+            <div class="offer">Von Damaskus nach Prag nur 5600€!</div>
+            <div class="offer">Von Bagdad nach Dublin nur 5700€!</div>
+            <div class="offer">Von Amman nach Brüssel nur 5800€!</div>
+            <div class="offer">Von Tripoli nach Warschau nur 5900€!</div>
+            <div class="offer">Von Beirut nach Budapest nur 6000€!</div>
+            <div class="offer">Von Gaza nach Kopenhagen nur 6100€!</div>
+            <div class="offer">Von Erbil nach Mailand nur 6200€!</div>
+            <div class="offer">Von Sana'a nach Sofia nur 6300€!</div>
+            <div class="offer">Von Basra nach Bukarest nur 6400€!</div>
+            <div class="offer">Von Jalalabad nach Kopenhagen nur 4500€!</div>
+            <div class="offer">Von Mosul nach Rom nur 4700€!</div>
+            <div class="offer">Von Kabul nach Madrid nur 4800€!</div>
+            <div class="offer">Von Aleppo nach Athen nur 4900€!</div>
+            <div class="offer">Von Beirut nach Paris nur 5000€!</div>
+            <div class="offer">Von Amman nach Barcelona nur 5100€!</div>
+            <div class="offer">Von Tripoli nach Nizza nur 5900€!</div>
+            <div class="offer">Von Erbil nach Valencia nur 5800€!</div>
+            <div class="offer">Von Basra nach Krakau nur 5600€!</div>
+            <div class="offer">Von Sana'a nach Ljubljana nur 5700€!</div>
+            <div class="offer">Von Quetta nach Vilnius nur 5400€!</div>
+            <div class="offer">Von Kabul nach Riga nur 5300€!</div>
         </div>
     </section>
 </main>
@@ -99,3 +111,4 @@
 </footer>
 </body>
 </html>
+
