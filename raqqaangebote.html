@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Angebote von Raqqa - One Way Out of the Middle East</title>
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
+</head>
+<body>
+<header>
+    <h1>One Way Out of the Middle East</h1>
+    <nav>
+        <ul>
+            <li><a href="homex.html">Startseite</a></li>
+            <li><a href="about.html">Über uns</a></li>
+            <li><a href="services.html">Dienstleistungen</a></li>
+            <li><a href="missions.html">Rettungsmissionen</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="prices.html">Preise und Angebote</a></li>
+            <li><a href="standorte.html">Standorte</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Angebote von Raqqa</h2>
+        <p>Hier finden Sie alle verfügbaren Angebote von Raqqa, inklusive Preise und Standorte.</p>
+        <div class="offer">
+            <h3>Von Raqqa nach Berlin</h3>
+            <p>Preis: <span class="price">4800€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-berlin"><a style="color: #ffffff" href="https://google.com">#</a></div>
+        </div>
+        <div class="offer">
+            <h3>Von Raqqa nach Paris</h3>
+            <p>Preis: <span class="price">4900€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-paris"></div>
+        </div>
+        <div class="offer">
+            <h3>Von Raqqa nach London</h3>
+            <p>Preis: <span class="price">5000€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-london"></div>
+        </div>
+        <div class="offer">
+            <h3>Von Raqqa nach Rom</h3>
+            <p>Preis: <span class="price">5100€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-rom"></div>
+        </div>
+        <div class="offer">
+            <h3>Von Raqqa nach Madrid</h3>
+            <p>Preis: <span class="price">5200€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-madrid"></div>
+        </div>
+        <div class="offer">
+            <h3>Von Raqqa nach Wien</h3>
+            <p>Preis: <span class="price">5300€</span></p>
+            <p>Standort: Hauptstraße 21, Raqqa, Syrien</p>
+            <i class="fab fa-paypal"></i>
+            <div id="paypal-button-wien"></div>
+        </div>
+    </section>
+    <section>
+        <h2>Konsulate der EU in Raqqa</h2>
+        <p>Im Folgenden finden Sie die Konsulate der EU in Raqqa:</p>
+        <div class="consulate">
+            <h3>Deutsches Konsulat</h3>
+            <p>Adresse: Konsulatsstraße 1, Raqqa, Syrien</p>
+            <p>E-Mail: konsulat.de@raqqa.de</p>
+        </div>
+        <div class="consulate">
+            <h3>Französisches Konsulat</h3>
+            <p>Adresse: Konsulatsstraße 2, Raqqa, Syrien</p>
+            <p>E-Mail: konsulat.fr@raqqa.fr</p>
+        </div>
+        <div class="consulate">
+            <h3>Britisches Konsulat</h3>
+            <p>Adresse: Konsulatsstraße 3, Raqqa, Syrien</p>
+            <p>E-Mail: konsulat.uk@raqqa.uk</p>
+        </div>
+        <div class="consulate">
+            <h3>Italienisches Konsulat</h3>
+            <p>Adresse: Konsulatsstraße 4, Raqqa, Syrien</p>
+            <p>E-Mail: konsulat.it@raqqa.it</p>
+        </div>
+        <div class="consulate">
+            <h3>Spanisches Konsulat</h3>
+            <p>Adresse: Konsulatsstraße 5, Raqqa, Syrien</p>
+            <p>E-Mail: konsulat.es@raqqa.es</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2024 OneWayOutOfTheMiddleEast. Alle Rechte vorbehalten.</p>
+    <p>Website: <a href="http://www.schlepper.info">schlepper.info</a></p>
+</footer>
+
+<script>
+// Render the PayPal buttons
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '4800'
+                },
+                description: 'Von Raqqa nach Berlin'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-berlin');
+
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '4900'
+                },
+                description: 'Von Raqqa nach Paris'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-paris');
+
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '5000'
+                },
+                description: 'Von Raqqa nach London'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-london');
+
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '5100'
+                },
+                description: 'Von Raqqa nach Rom'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-rom');
+
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '5200'
+                },
+                description: 'Von Raqqa nach Madrid'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-madrid');
+
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: '5300'
+                },
+                description: 'Von Raqqa nach Wien'
+            }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    }
+}).render('#paypal-button-wien');
+</script>
+</body>
+</html>
+

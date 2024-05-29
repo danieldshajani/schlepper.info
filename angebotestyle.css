@@ -1,0 +1,41 @@
+/* Bestehender CSS-Code bleibt unverändert */
+
+/* Neues CSS für Angebote und Konsulate auf der Mosul-Seite */
+.offer {
+    background-color: #e6f7ff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.offer:hover {
+    transform: scale(1.05);
+}
+
+.offer h3 {
+    color: #004080;
+    margin-top: 0;
+}
+
+.price {
+    color: #d90047;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.consulate {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.consulate h3 {
+    color: #004080;
+    margin-top: 0;
+}
